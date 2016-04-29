@@ -13,5 +13,6 @@ namespace DemoConsole.Models
         public virtual Address Address { get; set; }
         public virtual Address AlternativeAddress { get; set; }
 
+        public virtual Course CurrentCourse { get; set; }
     }
 }

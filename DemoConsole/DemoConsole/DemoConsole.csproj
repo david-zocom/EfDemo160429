@@ -52,7 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201604290746159_InitialCreate.cs" />
+    <Compile Include="Migrations\201604290746159_InitialCreate.Designer.cs">
+      <DependentUpon>201604290746159_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604290818436_Added courses.cs" />
+    <Compile Include="Migrations\201604290818436_Added courses.Designer.cs">
+      <DependentUpon>201604290818436_Added courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Models\SchoolContext.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Program.cs" />
@@ -61,6 +71,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604290746159_InitialCreate.resx">
+      <DependentUpon>201604290746159_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604290818436_Added courses.resx">
+      <DependentUpon>201604290818436_Added courses.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
