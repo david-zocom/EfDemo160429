@@ -60,6 +60,10 @@
     <Compile Include="Migrations\201604290818436_Added courses.Designer.cs">
       <DependentUpon>201604290818436_Added courses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604290928445_Fluent api 1.cs" />
+    <Compile Include="Migrations\201604290928445_Fluent api 1.Designer.cs">
+      <DependentUpon>201604290928445_Fluent api 1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Course.cs" />
@@ -78,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604290818436_Added courses.resx">
       <DependentUpon>201604290818436_Added courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604290928445_Fluent api 1.resx">
+      <DependentUpon>201604290928445_Fluent api 1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

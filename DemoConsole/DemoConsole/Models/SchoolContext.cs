@@ -14,5 +14,14 @@ namespace DemoConsole.Models
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("school");
+            var studentConfig = modelBuilder.Entity<Student>();
+            studentConfig.ToTable("StudentTable");
+            studentConfig.HasKey<int>(s => s.StudentId);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
